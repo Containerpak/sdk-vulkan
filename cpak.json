@@ -1,11 +1,22 @@
 {
-  "$schema": "https://raw.githubusercontent.com/Containerpak/cpak/v2/schema/manifest-v2.json",
-  "manifest_version": "2.0",
+  "$schema": "https://raw.githubusercontent.com/Containerpak/cpak/v2/schema/manifest-v3.json",
+  "manifest_version": "3.0",
   "name": "Vulkan and Shader SDK",
   "description": "Vulkan headers, diagnostics, glslang and SPIR-V development tools.",
   "version": "1.4.341",
-  "image": "ghcr.io/containerpak/sdk-vulkan:main",
-  "binaries": ["/usr/bin/glslang", "/usr/bin/glslangValidator", "/usr/bin/spirv-as", "/usr/bin/spirv-dis", "/usr/bin/spirv-link", "/usr/bin/spirv-opt", "/usr/bin/spirv-val", "/usr/bin/vkcube", "/usr/bin/vkcubepp", "/usr/bin/vulkaninfo"],
+  "image": "ghcr.io/containerpak/sdk-vulkan@sha256:b34c89b4b8a47933c6a4a21331aa5d7f7f52338f30884c9abcd793a55550783a",
+  "binaries": [
+    "/usr/bin/glslang",
+    "/usr/bin/glslangValidator",
+    "/usr/bin/spirv-as",
+    "/usr/bin/spirv-dis",
+    "/usr/bin/spirv-link",
+    "/usr/bin/spirv-opt",
+    "/usr/bin/spirv-val",
+    "/usr/bin/vkcube",
+    "/usr/bin/vkcubepp",
+    "/usr/bin/vulkaninfo"
+  ],
   "desktop_entries": [],
   "dependencies": [],
   "addons": [],
@@ -14,21 +25,18 @@
     "slot": "sdk.vulkan",
     "mode": "exclusive",
     "exports": {
-      "path": ["/usr/bin"]
+      "path": [
+        "/usr/bin"
+      ]
     }
   },
   "idle_time": 0,
   "override": {
-    "socketX11": true,
     "socketWayland": true,
     "socketPulseAudio": false,
-    "socketSessionBus": false,
-    "socketSystemBus": false,
     "socketSshAgent": true,
     "socketCups": false,
     "socketGpgAgent": true,
-    "socketAtSpiBus": false,
-    "socketBluetooth": false,
     "deviceDri": true,
     "deviceKvm": false,
     "deviceShm": false,
@@ -40,7 +48,12 @@
     "deviceAll": false,
     "notification": false,
     "openURI": false,
-    "filesystem": [{"path": "home", "access": "read-write"}],
+    "filesystem": [
+      {
+        "path": "home",
+        "access": "read-write"
+      }
+    ],
     "env": [],
     "network": true,
     "process": false,
@@ -48,7 +61,6 @@
     "memoryMaxMB": 0,
     "cpuQuota": 0,
     "pidsMax": 0,
-    "asRoot": false,
-    "allowedHostCommands": []
+    "asRoot": false
   }
 }
