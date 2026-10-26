@@ -4,7 +4,7 @@
   "name": "Vulkan and Shader SDK",
   "description": "Vulkan headers, diagnostics, glslang and SPIR-V development tools.",
   "version": "1.4.341",
-  "image": "ghcr.io/containerpak/sdk-vulkan@sha256:848d05d48a5b6fbe396487af4eba987ee013abea7efa764401dc3c2de45f611c",
+  "image": "ghcr.io/containerpak/sdk-vulkan@sha256:b284252b9514ff5e620f6806f4615c54ab02681de74929c3ae1ff110f6b5ddfa",
   "binaries": [
     "/usr/bin/glslang",
     "/usr/bin/glslangValidator",
